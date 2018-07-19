@@ -1,0 +1,11 @@
+.discounts-list-wrapper {
+    position: fixed;
+    z-index: 10;
+    top: 40%;
+    left: -15px;
+}
+
+.discounts-list-title {
+    text-align: center;
+    text-transform: uppercase;
+}

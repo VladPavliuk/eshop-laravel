@@ -1,0 +1,13 @@
+{
+    "name": "root/codeception",
+    "authors": [
+        {
+            "name": "vlad",
+            "email": "pavliuk.vlad@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.4"
+    }
+}

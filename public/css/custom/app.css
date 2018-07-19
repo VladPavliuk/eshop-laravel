@@ -1,0 +1,13 @@
+.product-item {
+  margin: 20px 0;
+}
+
+.product-item .image-wrapper {
+  text-align: center;
+}
+
+.product-item .image-wrapper img {
+  margin-top: 15px;
+  height: 250px;
+}
+

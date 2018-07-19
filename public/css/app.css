@@ -1,0 +1,254 @@
+* {
+  font-family: 'Play', sans-serif;
+}
+
+.discounts-header-title {
+  color: red;
+  text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.nav-link {
+  outline: none;
+  cursor: pointer;
+}
+
+*[product-photos-carousel-trigger] {
+  cursor: pointer;
+}
+
+#on-app-loading {
+  position: fixed;
+  top: 30%;
+  left: 45%;
+}
+
+#on-app-loading .picture #left-square {
+  display: inline-block;
+  left: 35px;
+  position: relative;
+  width: 60px;
+  height: 80px;
+  border: 6px solid #2257ff;
+  -webkit-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+  -webkit-animation: left-square-rotate 2s infinite;
+          animation: left-square-rotate 2s infinite;
+}
+
+#on-app-loading .picture #circle {
+  display: inline-block;
+  position: relative;
+  border: 6px solid #2257ff;
+  top: 5px;
+  width: 70px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#on-app-loading .picture #right-square {
+  display: inline-block;
+  position: relative;
+  right: 35px;
+  width: 60px;
+  height: 80px;
+  border: 6px solid #2257ff;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
+  -webkit-animation: right-square-rotate 2s infinite;
+          animation: right-square-rotate 2s infinite;
+}
+
+#on-app-loading .picture #picture-title {
+  font-size: 30pt;
+  position: relative;
+  right: 95px;
+  top: 20px;
+  color: #2257ff;
+}
+
+.error-alert-wrapper {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.error-alert-wrapper > div {
+  display: inline-block;
+}
+
+.error-alert-wrapper > div button {
+  margin-left: 15px;
+}
+
+@-webkit-keyframes left-square-rotate {
+  0% {
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 70px;
+  }
+
+  100% {
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+}
+
+@keyframes left-square-rotate {
+  0% {
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 70px;
+  }
+
+  100% {
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+}
+
+@-webkit-keyframes right-square-rotate {
+  0% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 70px;
+  }
+
+  100% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+}
+
+@keyframes right-square-rotate {
+  0% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 70px;
+  }
+
+  100% {
+    -webkit-transform: rotate(27deg);
+            transform: rotate(27deg);
+  }
+}
+
+.footer {
+  padding: 20px 20px 0 20px;
+  color: #fff;
+}
+
+.product-item {
+  margin: 20px 0;
+}
+
+.product-item .image-wrapper {
+  text-align: center;
+}
+
+.product-item .image-wrapper img {
+  margin-top: 15px;
+  height: 250px;
+}
+
+.product-item .product-title {
+  font-size: 10pt;
+}
+
+.product-item .product-price {
+  font-size: 16pt;
+}
+
+.product-item .product-photo-zoom-wrapper {
+  position: relative;
+}
+
+.product-item .product-photo-zoom-wrapper i {
+  position: absolute;
+  top: -40px;
+  left: 53px;
+  font-size: 19pt;
+  opacity: 0.75;
+  color: #fff;
+}
+
+.product-item .block-divider {
+  margin-bottom: 10px;
+}
+
+.product-item .product-amount-input {
+  width: 55%;
+  border: 1px solid #a5a5a5;
+  color: #909090;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 22pt;
+  line-height: 35px;
+}
+
+.product-item .add-product-button {
+  height: 39px;
+  line-height: 24px;
+}
+
+.product-amount-shopping-cart-input {
+  width: 70px;
+}
+
+.shopping-cart-remove-product-icon {
+  font-size: 35pt;
+  line-height: 24px;
+  cursor: pointer;
+  color: #626262;
+}
+
+.shopping-cart-remove-product-icon:hover {
+  color: #000;
+}
+
+#data-shopping-cart-stub {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  height: 64px;
+  background-color: white;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+#data-shopping-cart-stub-header {
+  width: 100%;
+  height: 43vw;
+  top: 0;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  opacity: .6;
+}
+
