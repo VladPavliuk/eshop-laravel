@@ -19,7 +19,6 @@ class CreateUsersTypesPricesTypesRelationsTable extends Migration
             $table->integer('prices_type_id')->unsigned();
             $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            $table->softDeletes();
 
             $table->foreign('users_type_id')->references('id')->on('users_types');
             $table->foreign('prices_type_id')->references('id')->on('prices_types');

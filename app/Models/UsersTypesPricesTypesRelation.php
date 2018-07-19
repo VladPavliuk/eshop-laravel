@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class UsersTypesPricesTypesRelation extends Model
 {
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
     public $timestamps = false;
 
     public function priceType()

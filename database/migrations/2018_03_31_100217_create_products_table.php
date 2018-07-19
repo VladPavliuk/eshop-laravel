@@ -26,7 +26,6 @@ class CreateProductsTable extends Migration
             $table->integer('in_store')->default(0)->unsigned();
 			$table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
 			$table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-            $table->softDeletes();
 
 			$table->foreign('category_id')->references('id')->on('products_categories');
 			$table->foreign('size_id')->references('id')->on('products_sizes');

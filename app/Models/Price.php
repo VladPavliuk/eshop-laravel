@@ -7,7 +7,5 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Price extends Model
 {
-    use SoftDeletes;
-    protected $dates = ['deleted_at'];
     public $timestamps = false;
 }

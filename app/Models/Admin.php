@@ -8,10 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Admin extends Authenticatable
 {
-    use Notifiable, SoftDeletes;
+    use Notifiable;
 
     public $timestamps = false;
-    protected $dates = ['deleted_at'];
 
     protected $guard = 'admin';
 
